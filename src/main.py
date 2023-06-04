@@ -5,13 +5,15 @@ import random
 print(logo)
 
 
-correct_num = random.randint(1, 100)
+
 guesses_left = 0
 user_guess = 0
 play_game = True
 user_guesses = []
 
 def start_game():
+    correct_num = random.randint(1, 100)
+    print("Guess a number between 1-100!")
     global guesses_left
     user_guesses = []
     while guesses_left >= 0:
